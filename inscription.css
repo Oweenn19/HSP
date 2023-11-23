@@ -1,0 +1,219 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #000000;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 30px;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0px 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: auto;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  nav ul li a:hover {
+    color: #666060;
+  }
+  
+  nav .burger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  nav .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #777;
+    margin: 5px;
+    transition: all 0.05s ease;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    nav {
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    nav .burger {
+      display: block;
+    }
+  
+    nav .nav-links {
+      position: fixed;
+      background-color: #fff;
+      height: 100vh;
+      width: 100%;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      padding-top: 50px;
+      transition: all 0.5s ease;
+      z-index: 1;
+    }
+  
+    nav .nav-links li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+  
+    nav .nav-links li a {
+      font-size: 1.5rem;
+    }
+  
+    nav .nav-links li a:hover {
+      color: #777;
+    }
+  
+    nav .burger .line1 {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    nav .burger .line2 {
+      opacity: 0;
+    }
+  
+    nav .burger .line3 {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  
+    nav.active .nav-links {
+      left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .navbar {
+        padding: 0;
+    }
+  
+    .navbar .menu {
+        display: block;
+    }
+  
+    .nav-links {
+        top: 0;
+        right: 0;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.27);
+        backdrop-filter: blur(5px);
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        margin-right: -100%;
+        transition: all 0.9s ease;
+    }
+  
+    .nav-links.mobile-menu {
+        margin-right: 0;
+  
+    }
+  
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .navbar .nav-links ul li {
+        margin: 25px 0;
+        font-size: 2em;
+    }
+  
+    .navbar .logo {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+    }
+  
+  }
+
+  body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+}
+
+form {
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #000000;
+    border-radius: 30px;
+}
+
+label {
+  color: #000000;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
